@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>3rd Party Auth Mock</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: "Arial", sans-serif;
+        justify-content: center;
+        align-items: center;
+        padding: 0 24px;
+        margin: 0;
+        height: 100vh;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+      }
+
+      .spacing {
+        padding: 10px 0px;
+      }
+
+      .redirect-button {
+        padding: 15px 30px;
+        margin: 0px 5px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <h1>3rd Party Auth Mock</h1>
+    </center>
+
+    <hr />
+
+    <h2>For Android Dev</h2>
+
+    Member ID 1
+    <div class="row">
+      <a
+        href="foodpanda-st-qc-memberships://openid/callback?code=test1"
+        class="redirect-button"
+        >Deeplink</a
+      >
+      <p>foodpanda-st-qc-memberships://openid/callback?code=test1</p>
+    </div>
+    <div class="spacing" />
+    Member ID 2
+    <div class="row">
+      <a
+        href="foodpanda-st-qc-memberships://openid/callback?code=test2"
+        class="redirect-button"
+        >Deeplink</a
+      >
+      <p>foodpanda-st-qc-memberships://openid/callback?code=test2</p>
+    </div>
+
+    <hr />
+
+    <h2>For iOS Dev</h2>
+
+    Member ID 3
+    <div class="row">
+      <a
+        href="https://www-st.foodpanda.sg/membership/openid/callback?code=test3"
+        class="redirect-button"
+        >Weblink</a
+      >
+      <p>https://www-st.foodpanda.sg/membership/openid/callback?code=test3</p>
+    </div>
+    <div class="spacing" />
+    Member ID 4
+    <div class="row">
+      <a
+        href="https://www-st.foodpanda.sg/membership/openid/callback?code=test4"
+        class="redirect-button"
+        >Weblink</a
+      >
+      <p>https://www-st.foodpanda.sg/membership/openid/callback?code=test4</p>
+    </div>
+
+    <hr />
+
+    <h2>For Web Dev</h2>
+
+    Member ID 5
+    <div class="row">
+      <a
+        href="https://www-st.foodpanda.sg/membership/openid/callback?code=test5"
+        class="redirect-button"
+        >Weblink</a
+      >
+      <p>https://www-st.foodpanda.sg/membership/openid/callback?code=test5</p>
+    </div>
+    <div class="spacing" />
+    Member ID 6
+    <div class="row">
+      <a
+        href="https://www-st.foodpanda.sg/membership/openid/callback?code=test6"
+        class="redirect-button"
+        >Weblink</a
+      >
+      <p>https://www-st.foodpanda.sg/membership/openid/callback?code=test6</p>
+    </div>
+
+    <hr />
+
+    <h2>For QA</h2>
+
+    Member ID 7
+    <div class="row">
+      <a
+        href="https://www-st.foodpanda.sg/membership/openid/callback?code=test7"
+        class="redirect-button"
+        >Weblink</a
+      >
+      <p>https://www-st.foodpanda.sg/membership/openid/callback?code=test7</p>
+    </div>
+    <div class="spacing" />
+    Member ID 8
+    <div class="row">
+      <a
+        href="https://www-st.foodpanda.sg/membership/openid/callback?code=test8"
+        class="redirect-button"
+        >Weblink</a
+      >
+      <p>https://www-st.foodpanda.sg/membership/openid/callback?code=test8</p>
+    </div>
+
+    <hr />
+
+    <h2>For Testing failing to link</h2>
+    <div class="row">
+      <a
+        href="https://www-st.foodpanda.sg/membership/openid/callback?code=linkfail"
+        class="redirect-button"
+        >Weblink</a
+      >
+      <p>
+        https://www-st.foodpanda.sg/membership/openid/callback?code=linkfail
+      </p>
+    </div>
+    <div class="row">
+      <a
+        href="foodpanda-st-qc-memberships://openid/callback?code=linkfail"
+        class="redirect-button"
+        >Deeplink</a
+      >
+      <p>foodpanda-st-qc-memberships://openid/callback?code=linkfail</p>
+    </div>
+  </body>
+</html>

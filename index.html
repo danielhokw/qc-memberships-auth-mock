@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta
-      charset="UTF-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3rd Party Auth Mock</title>
     <style>
       body {
@@ -40,6 +37,7 @@
         transition: background-color 0.3s ease;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
       }
+
     </style>
   </head>
 
@@ -54,21 +52,13 @@
 
     Member ID 1
     <div class="row">
-      <a
-        href="foodpanda-st-qc-memberships://openid/callback?code=test1"
-        class="redirect-button"
-        >Deeplink</a
-      >
+      <div data-url="foodpanda-st-qc-memberships://openid/callback?code=test1" class="redirect-button">Deeplink</div>
       <p>foodpanda-st-qc-memberships://openid/callback?code=test1</p>
     </div>
     <div class="spacing" />
     Member ID 2
     <div class="row">
-      <a
-        href="foodpanda-st-qc-memberships://openid/callback?code=test2"
-        class="redirect-button"
-        >Deeplink</a
-      >
+      <div data-url="foodpanda-st-qc-memberships://openid/callback?code=test2" class="redirect-button">Deeplink</div>
       <p>foodpanda-st-qc-memberships://openid/callback?code=test2</p>
     </div>
 
@@ -78,21 +68,13 @@
 
     Member ID 3
     <div class="row">
-      <a
-        href="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test3"
-        class="redirect-button"
-        >Weblink</a
-      >
+      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test3" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test3</p>
     </div>
     <div class="spacing" />
     Member ID 4
     <div class="row">
-      <a
-        href="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test4"
-        class="redirect-button"
-        >Weblink</a
-      >
+      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test4" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test4</p>
     </div>
 
@@ -102,21 +84,13 @@
 
     Member ID 5
     <div class="row">
-      <a
-        href="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test5"
-        class="redirect-button"
-        >Weblink</a
-      >
+      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test5" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test5</p>
     </div>
     <div class="spacing" />
     Member ID 6
     <div class="row">
-      <a
-        href="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test6"
-        class="redirect-button"
-        >Weblink</a
-      >
+      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test6" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test6</p>
     </div>
 
@@ -126,21 +100,13 @@
 
     Member ID 7
     <div class="row">
-      <a
-        href="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test7"
-        class="redirect-button"
-        >Weblink</a
-      >
+      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test7" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test7</p>
     </div>
     <div class="spacing" />
     Member ID 8
     <div class="row">
-      <a
-        href="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test8"
-        class="redirect-button"
-        >Weblink</a
-      >
+      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test8" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test8</p>
     </div>
 
@@ -148,22 +114,27 @@
 
     <h2>For Testing failing to link</h2>
     <div class="row">
-      <a
-        href="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=linkfail"
-        class="redirect-button"
-        >Weblink</a
-      >
+      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=linkfail" class="redirect-button">Weblink
+      </div>
       <p>
         https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=linkfail
       </p>
     </div>
     <div class="row">
-      <a
-        href="foodpanda-st-qc-memberships://openid/callback?code=linkfail"
-        class="redirect-button"
-        >Deeplink</a
-      >
+      <div data-url="foodpanda-st-qc-memberships://openid/callback?code=linkfail" class="redirect-button">Deeplink</div>
       <p>foodpanda-st-qc-memberships://openid/callback?code=linkfail</p>
     </div>
+
+    <script>
+      // JavaScript for button redirection
+      document.querySelectorAll(".redirect-button").forEach(function(button) {
+        button.addEventListener("click", function() {
+          var url = button.getAttribute("data-url");
+          window.location.href = url;
+        });
+      });
+
+    </script>
   </body>
+
 </html>

@@ -74,8 +74,8 @@
     <div class="spacing" />
     Member ID 4
     <div class="row">
-      <div data-url="https://www-st.foodpanda.sg" class="redirect-button">Weblink</div>
-      <p>https://www-st.foodpanda.sg</p>
+      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test4" class="redirect-button">Weblink</div>
+      <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test4</p>
     </div>
 
     <hr />
@@ -130,7 +130,7 @@
       document.querySelectorAll(".redirect-button").forEach(function(button) {
         button.addEventListener("click", function() {
           var url = button.getAttribute("data-url");
-          window.location.href = url;
+          window.location.replace(url);
         });
       });
 

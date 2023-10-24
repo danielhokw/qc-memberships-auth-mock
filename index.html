@@ -52,13 +52,13 @@
 
     Member ID 1
     <div class="row">
-      <div data-url="foodpanda-st-qc-memberships://openid/callback?code=test1" class="redirect-button">Deeplink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=android&code=test1" class="redirect-button">Deeplink</div>
       <p>foodpanda-st-qc-memberships://openid/callback?code=test1</p>
     </div>
     <div class="spacing" />
     Member ID 2
     <div class="row">
-      <div data-url="foodpanda-st-qc-memberships://openid/callback?code=test2" class="redirect-button">Deeplink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=android&code=test2" class="redirect-button">Deeplink</div>
       <p>foodpanda-st-qc-memberships://openid/callback?code=test2</p>
     </div>
 
@@ -68,13 +68,13 @@
 
     Member ID 3
     <div class="row">
-      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test3" class="redirect-button">Weblink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=iphone&code=test3" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test3</p>
     </div>
     <div class="spacing" />
     Member ID 4
     <div class="row">
-      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test4" class="redirect-button">Weblink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=iphone&code=test4" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test4</p>
     </div>
 
@@ -84,13 +84,13 @@
 
     Member ID 5
     <div class="row">
-      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test5" class="redirect-button">Weblink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=volo&code=test5" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test5</p>
     </div>
     <div class="spacing" />
     Member ID 6
     <div class="row">
-      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test6" class="redirect-button">Weblink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=volo&code=test6" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test6</p>
     </div>
 
@@ -98,15 +98,15 @@
 
     <h2>For QA</h2>
 
-    Member ID 7
+    Member ID 7 (Web)
     <div class="row">
-      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test7" class="redirect-button">Weblink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=volo&code=test7" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test7</p>
     </div>
     <div class="spacing" />
-    Member ID 8
+    Member ID 8 (iOS)
     <div class="row">
-      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test8" class="redirect-button">Weblink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=iphone&code=test8" class="redirect-button">Weblink</div>
       <p>https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test8</p>
     </div>
 
@@ -114,14 +114,21 @@
 
     <h2>For Testing failing to link</h2>
     <div class="row">
-      <div data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=linkfail" class="redirect-button">Weblink
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=volo&code=linkfail" class="redirect-button">Weblink (Web)
       </div>
       <p>
         https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=linkfail
       </p>
     </div>
     <div class="row">
-      <div data-url="foodpanda-st-qc-memberships://openid/callback?code=linkfail" class="redirect-button">Deeplink</div>
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=iphone&code=linkfail" class="redirect-button">Weblink (iOS)
+      </div>
+      <p>
+        https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=linkfail
+      </p>
+    </div>
+    <div class="row">
+      <div data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=android&code=linkfail" class="redirect-button">Deeplink</div>
       <p>foodpanda-st-qc-memberships://openid/callback?code=linkfail</p>
     </div>
 

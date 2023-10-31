@@ -55,7 +55,7 @@
     Member ID 1
     <div class="row">
       <div
-        data-url="foodpanda-st-qc-memberships://openid/callback?code=test1"
+        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=android&code=test1"
         class="redirect-button"
       >
         Deeplink
@@ -66,7 +66,7 @@
     Member ID 2
     <div class="row">
       <div
-        data-url="foodpanda-st-qc-memberships://openid/callback?code=test2"
+        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=android&code=test2"
         class="redirect-button"
       >
         Deeplink
@@ -145,32 +145,20 @@
 
     <h2>For QA</h2>
 
-    Member ID 7 (Web)
+    Member ID 7 (Android)
     <div class="row">
       <div
-        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=volo&code=test7"
-        class="redirect-button"
-      >
-        Weblink
-      </div>
-      <p>
-        https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test7
-      </p>
-    </div>
-    <div class="spacing" />
-    Member ID 8 (Android)
-    <div class="row">
-      <div
-        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=android&code=test8"
+        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=android&code=test7"
         class="redirect-button"
       >
         Deeplink (Android)
       </div>
       <p>
-        https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test8
+        foodpanda-st-qc-memberships://openid/callback?code=test7
       </p>
     </div>
-    Member ID 9 (iphone)
+    <div class="spacing" />
+    Member ID 8 (iOS)
     <div class="row">
       <div
         data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=iphone&code=test8"
@@ -180,6 +168,18 @@
       </div>
       <p>
         https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test8
+      </p>
+    </div>
+    Member ID 9 (Web)
+    <div class="row">
+      <div
+        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=volo&code=test9"
+        class="redirect-button"
+      >
+        Weblink (Web)
+      </div>
+      <p>
+        https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test9
       </p>
     </div>
 

@@ -163,16 +163,17 @@
         Deeplink
       </div>
       <p>
-        https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test8
+        foodpanda-st-openid://auth/callback/qc-memberships?code=test8
       </p>
     </div>
+    <div class="spacing" />
     Member ID 9 (Web)
     <div class="row">
       <div
-        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=volo&code=test9"
+        data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test9"
         class="redirect-button"
       >
-        Redirect Weblink
+        Weblink
       </div>
       <p>
         https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=test9
@@ -184,10 +185,10 @@
     <h2>For Testing failing to link</h2>
     <div class="row">
       <div
-        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=volo&code=linkfail"
+        data-url="https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=linkfail"
         class="redirect-button"
       >
-        Redirect Weblink
+        Weblink
       </div>
       <p>
         https://www-st.foodpanda.sg/qc-memberships/openid/callback?code=linkfail
@@ -195,10 +196,10 @@
     </div>
     <div class="row">
       <div
-        data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=android&code=linkfail"
+        data-url="foodpanda-st-qc-memberships://openid/callback?code=linkfail"
         class="redirect-button"
       >
-        Redirect Deeplink (Android)
+        Deeplink
       </div>
       <p>foodpanda-st-qc-memberships://openid/callback?code=linkfail</p>
     </div>
@@ -207,7 +208,7 @@
         data-url="https://sg-st.fd-api.com/api/v1/qc-memberships/auth/redirect?program_id=test-program&client_id=iphone&code=linkfail"
         class="redirect-button"
       >
-        Redirect Deeplink (iOS)
+        Redirect Deeplink
       </div>
       <p>foodpanda-st-qc-memberships://openid/callback?code=linkfail</p>
     </div>
